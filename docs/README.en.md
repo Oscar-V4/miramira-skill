@@ -6,14 +6,14 @@
   <a href="README.zh-CN.md">简体中文</a>
 </p>
 
-**MiraMira is a mirror-like agent skill that grills a plan one question at a time.**  
-It is almost aggressively simple: give it a plan, and it reflects the next important question back to you with a recommended answer.
+**MiraMira is an agent skill for drawing out a user's idea through Socratic questioning.** 🪞  
+It is almost aggressively simple: give it a plan, and it asks one sharp question at a time with a recommended answer.
 
-- Compresses plans, designs, product direction, and technical choices into sharper questions.
-- Walks the decision tree one branch at a time.
+- Turns ideas, plans, designs, and product direction into clearer questions.
+- Walks the decision tree one branch at a time to expose hidden assumptions and ambiguity.
 - Asks only one question at a time.
 - Explores the codebase first when the answer can be found locally.
-- Reinterprets Matt Pocock's `grill me` flow through a mirror concept.
+- Keeps the relentless pressure of Matt Pocock's `grill me` flow while helping the user see a better answer.
 
 ## Quick Install
 
@@ -49,11 +49,11 @@ Restart your agent app after installation, then invoke `$miramira`.
 
 | Situation | Say this |
 |---|---|
-| You want to test whether an idea holds | `$miramira Grill this product idea one question at a time.` |
+| You want to make an idea clearer | `$miramira Ask the first question I need to answer about this product idea.` |
+| You want hidden assumptions surfaced | `$miramira Question this plan Socratically, one question at a time.` |
 | A design feels vague | `$miramira Start with the riskiest ambiguity in this architecture plan.` |
 | You are delaying a decision | `$miramira Compare these options through the next question and recommended answer.` |
 | You are tightening a PRD | `$miramira Grill this feature plan around user value.` |
-| You want a pre-implementation check | `$miramira Ask the one question I should answer before implementing this.` |
 
 ## Full Skill Text
 

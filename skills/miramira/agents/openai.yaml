@@ -1,4 +1,4 @@
 interface:
   display_name: "MiraMira"
-  short_description: "Mirror a plan with focused grilling"
-  default_prompt: "Use $miramira to grill my plan one question at a time, mirror the tradeoffs, and recommend an answer for each question."
+  short_description: "Socratic grilling for clearer ideas"
+  default_prompt: "Use $miramira to question my plan Socratically, one question at a time, and recommend an answer for each question."
