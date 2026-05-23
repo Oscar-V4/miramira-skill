@@ -1,38 +1,43 @@
 # MiraMira
 
 <p align="center">
+  <img src="../assets/miramira-logo.png" alt="MiraMira magic mirror logo" width="240">
+</p>
+
+<p align="center">
   <a href="../README.md">한국어</a> |
   <a href="README.en.md">English</a> |
   <b>简体中文</b>
 </p>
 
-**MiraMira 是一个通过苏格拉底式提问来引出用户想法的 Agent Skill。** 🪞  
-它简单到不可思议：给它一个计划，它会一次只问一个尖锐问题，并同时给出推荐回答。
+**"He who asks a question is a fool for five minutes; he who does not remains a fool forever"**
 
-- 把想法、计划、设计和产品方向转化成更清晰的问题。
-- 沿着决策树一条分支一条分支推进，暴露隐藏前提和模糊点。
-- 一次只问一个问题。
-- 如果答案能通过本地代码库探索得到，就先探索代码库。
-- 保留 Matt Pocock `grill me` 流程的追问压力，同时帮助用户看见更好的答案。
+**"提问的人可能只做五分钟的傻瓜，不提问的人却会做一辈子的傻瓜" - 中国谚语**
+
+AI Agent 很强大。但无论多强的 Agent，如果无法清楚理解用户想法背后的语境、背景、偏好和限制，也很难真正做好工作。MiraMira 是一种打破 AI 与用户之间沟通壁垒的方法论。
+
+MIRAMIRA 通过提问，把：
+- 模糊的想法提炼成清晰的目的和标准，
+- 零散的偏好整理成一致的方向，
+- 不明确的请求转化成 Agent 可以实现的规格。
+- 如果答案可以通过探索代码库得到，它会先进行探索。
+- 它会持续追问，直到达成 shared understanding。
 
 ## 快速安装
 
-把下面这段提示词复制给 Codex、Claude Code、Antigravity 或其他 Agent：
+把下面这段提示词直接复制给 Codex、Claude Code、Antigravity 或其他 Agent 即可。
 
 ```text
-请查看这个 GitHub 仓库并安装 MiraMira agent skill:
+请查看这个 GitHub repo 并安装 MiraMira agent skill:
 https://github.com/Oscar-V4/miramira-skill
 
-请检测你当前运行的 agent 环境。
+请检测你当前运行的 agent 环境并完成安装。
 - 如果是 Codex，请安装到 ~/.codex/skills/miramira。
 - 如果是 Claude Code，请安装到 ~/.claude/skills/miramira。
 - 如果是其他 agent，请确认它是否支持基于 SKILL.md 的 skill 文件夹，并安装到最接近的用户级 skill 目录。
-- 如果有内置 skill installer，请优先使用；否则 clone 这个 repo，并把 skills/miramira 复制到用户 skill 目录。
+- 如果有专用安装器，请使用它；否则 clone 这个 repo，并把 skills/miramira 文件夹复制到用户 skill 目录。
 
-安装后，请阅读 skills/miramira/SKILL.md 和 README.md，然后简短说明：
-1. 什么时候应该使用 $miramira
-2. 应该怎样给出计划
-3. 三个适合第一次测试的提示词
+安装后，请阅读 skills/miramira/SKILL.md 和 README.md，然后说明在这个环境里如何触发该 skill，并进行一段“skill 拆解解说”。
 ```
 
 直接安装：
@@ -45,19 +50,7 @@ python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github
 
 安装后重启你的 agent 应用，然后用 `$miramira` 调用。
 
-## 什么时候使用
-
-| 场景 | 可以这样说 |
-|---|---|
-| 想让想法更清晰 | `$miramira 问我关于这个产品想法最应该先回答的问题。` |
-| 想找出隐藏前提 | `$miramira 用苏格拉底式提问来审视这个计划，一次一个问题。` |
-| 设计感觉模糊 | `$miramira 从这个架构计划里风险最大的模糊点开始问。` |
-| 一直拖着不做决定 | `$miramira 用下一个问题和推荐答案来比较这些选项。` |
-| 想收紧 PRD | `$miramira 围绕用户价值 grill 这个功能计划。` |
-
 ## Skill 全文
-
-标准安装只复制 `skills/miramira`。README 变长不会让已安装的 skill 变重。运行时真正的 skill 表面是 `skills/miramira/SKILL.md`。
 
 <details>
 <summary><code>skills/miramira/SKILL.md</code></summary>
@@ -79,3 +72,19 @@ If a question can be answered by exploring the codebase, explore the codebase in
 ```
 
 </details>
+
+## 结构
+
+```text
+miramira-skill/
+├── README.md
+├── docs/
+│   ├── README.en.md
+│   └── README.zh-CN.md
+├── install.sh
+└── skills/
+    └── miramira/
+        ├── SKILL.md
+        └── agents/
+            └── openai.yaml
+```

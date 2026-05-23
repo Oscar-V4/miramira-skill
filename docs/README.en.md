@@ -1,38 +1,43 @@
 # MiraMira
 
 <p align="center">
+  <img src="../assets/miramira-logo.png" alt="MiraMira magic mirror logo" width="240">
+</p>
+
+<p align="center">
   <a href="../README.md">한국어</a> |
   <b>English</b> |
   <a href="README.zh-CN.md">简体中文</a>
 </p>
 
-**MiraMira is an agent skill for drawing out a user's idea through Socratic questioning.** 🪞  
-It is almost aggressively simple: give it a plan, and it asks one sharp question at a time with a recommended answer.
+**"He who asks a question is a fool for five minutes; he who does not remains a fool forever"**
 
-- Turns ideas, plans, designs, and product direction into clearer questions.
-- Walks the decision tree one branch at a time to expose hidden assumptions and ambiguity.
-- Asks only one question at a time.
-- Explores the codebase first when the answer can be found locally.
-- Keeps the relentless pressure of Matt Pocock's `grill me` flow while helping the user see a better answer.
+**"The one who asks may be a fool for five minutes, but the one who does not ask remains a fool forever" - Chinese proverb**
+
+AI agents are powerful. But even the strongest agent struggles when it cannot clearly understand the context, background, taste, and constraints behind a user's idea. MiraMira is a methodology for breaking down that communication barrier between AI and user.
+
+Through questions, MIRAMIRA draws out:
+- vague ideas into clear purpose and criteria,
+- scattered preferences into a consistent direction,
+- ambiguous requests into specs an agent can implement.
+- If the answer can be found through codebase exploration, it explores first.
+- It asks relentlessly until shared understanding is reached.
 
 ## Quick Install
 
-Paste this prompt into Codex, Claude Code, Antigravity, or another agent:
+Paste the prompt below directly into Codex, Claude Code, Antigravity, or another agent.
 
 ```text
 Please inspect this GitHub repo and install the MiraMira agent skill:
 https://github.com/Oscar-V4/miramira-skill
 
-Detect the agent environment you are running in.
+Detect the agent environment you are running in and install it.
 - If this is Codex, install it into ~/.codex/skills/miramira.
 - If this is Claude Code, install it into ~/.claude/skills/miramira.
 - If this is another agent, check whether it supports SKILL.md-based skill folders and install it in the closest user-level skill location.
-- Use a built-in skill installer if available; otherwise clone the repo and copy skills/miramira into the user skill directory.
+- Use a dedicated installer if one is available; otherwise clone the repo and copy the skills/miramira folder into the user skill directory.
 
-After installation, read skills/miramira/SKILL.md and README.md, then briefly explain:
-1. when I should use $miramira
-2. how I should present a plan
-3. three starter prompts to test it
+After installation, read skills/miramira/SKILL.md and README.md, then explain how to invoke the skill in this environment and give a "skill teardown commentary."
 ```
 
 Direct install:
@@ -45,19 +50,7 @@ python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github
 
 Restart your agent app after installation, then invoke `$miramira`.
 
-## When To Use It
-
-| Situation | Say this |
-|---|---|
-| You want to make an idea clearer | `$miramira Ask the first question I need to answer about this product idea.` |
-| You want hidden assumptions surfaced | `$miramira Question this plan Socratically, one question at a time.` |
-| A design feels vague | `$miramira Start with the riskiest ambiguity in this architecture plan.` |
-| You are delaying a decision | `$miramira Compare these options through the next question and recommended answer.` |
-| You are tightening a PRD | `$miramira Grill this feature plan around user value.` |
-
 ## Full Skill Text
-
-Standard installs copy only `skills/miramira`. A long README does not make the installed skill heavier. The runtime skill surface is `skills/miramira/SKILL.md`.
 
 <details>
 <summary><code>skills/miramira/SKILL.md</code></summary>
@@ -79,3 +72,19 @@ If a question can be answered by exploring the codebase, explore the codebase in
 ```
 
 </details>
+
+## Structure
+
+```text
+miramira-skill/
+├── README.md
+├── docs/
+│   ├── README.en.md
+│   └── README.zh-CN.md
+├── install.sh
+└── skills/
+    └── miramira/
+        ├── SKILL.md
+        └── agents/
+            └── openai.yaml
+```
