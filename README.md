@@ -1,4 +1,4 @@
-# MiraMira
+# MIRAMIRA
 
 <p align="center">
   <img src="assets/miramira-logo.png" alt="MiraMira magic mirror logo" width="240">
