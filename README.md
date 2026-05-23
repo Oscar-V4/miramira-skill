@@ -1,7 +1,7 @@
 # MiraMira
 
 <p align="center">
-  <img src="assets/miramira-logo.svg" alt="MiraMira logo" width="520">
+  <img src="assets/miramira-symbol.svg" alt="MiraMira mirror symbol" width="420">
 </p>
 
 <p align="center">
