@@ -10,9 +10,9 @@
   <a href="docs/README.zh-CN.md">简体中文</a>
 </p>
 
-###"He who asks a question is a fool for five minutes; he who does not remains a fool forever"###
+**"He who asks a question is a fool for five minutes; he who does not remains a fool forever"**
 
-###"질문하는 사람은 5분 동안 바보일 수 있지만, 질문하지 않는 사람은 평생 바보로 남는다" -중국 속담中###
+**"질문하는 사람은 5분 동안 바보일 수 있지만, 질문하지 않는 사람은 평생 바보로 남는다" -중국 속담中**
 
 AI 에이전트는 강력합니다. 하지만 아무리 뛰어난 에이전트도 유저 아이디어의 맥락, 배경, 취향, 제약을 명확히 파악하지 못하면 제대로 일하기 어렵습니다. MiraMira는 이 AI-User 간 소통의 장벽을 허무는 방법론입니다.
 
