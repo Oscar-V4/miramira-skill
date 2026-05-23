@@ -1,12 +1,16 @@
 # MiraMira
 
 <p align="center">
+  <img src="assets/miramira-logo.svg" alt="MiraMira logo" width="520">
+</p>
+
+<p align="center">
   <b>한국어</b> |
   <a href="docs/README.en.md">English</a> |
   <a href="docs/README.zh-CN.md">简体中文</a>
 </p>
 
-**MiraMira는 소크라테스식 질문으로 사용자의 아이디어를 효과적으로 끌어내는 에이전트 스킬입니다.** 🪞  
+**MiraMira는 소크라테스식 질문으로 사용자의 아이디어를 효과적으로 끌어내는 에이전트 스킬입니다.**  
 믿을 수 없을 만큼 단순합니다. 계획을 말하면, MiraMira는 한 번에 하나의 날카로운 질문을 던지고, 그 질문에 대한 추천 답까지 함께 제시합니다.
 
 - 아이디어, 계획, 설계, 제품 방향을 더 선명한 질문으로 바꿉니다.
