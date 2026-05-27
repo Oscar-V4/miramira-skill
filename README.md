@@ -74,6 +74,41 @@ If a question can be answered by exploring the codebase, explore the codebase in
 
 </details>
 
+## 출처 및 라이선스 고지
+
+MiraMira는 Matt Pocock의 `grill-me` 스킬을 친구에게 설명하기 쉬운 직관적인 브랜딩과 사용 맥락으로 다시 구성한 독립 프로젝트입니다. 원본 아이디어와 일부 스킬 문구는 [`mattpocock/skills`](https://github.com/mattpocock/skills)의 [`skills/productivity/grill-me`](https://github.com/mattpocock/skills/tree/main/skills/productivity/grill-me)를 바탕으로 하며, 해당 원본은 MIT License로 공개되어 있습니다.
+
+원본 저작권 고지: `MIT License Copyright (c) 2026 Matt Pocock`. 원본에서 가져오거나 수정한 부분에는 Matt Pocock의 MIT License 조건이 적용됩니다. 이 프로젝트는 Matt Pocock 또는 `mattpocock/skills`의 공식 프로젝트가 아니며, Matt Pocock의 보증이나 제휴를 의미하지 않습니다.
+
+<details>
+<summary>원본 MIT License 고지</summary>
+
+```text
+MIT License
+
+Copyright (c) 2026 Matt Pocock
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+</details>
+
 ## 구조
 
 ```text
