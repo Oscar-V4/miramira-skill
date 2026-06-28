@@ -89,6 +89,10 @@ If a question can be answered by exploring the codebase, explore the codebase in
 
 </details>
 
+## 라이선스
+
+이 프로젝트는 [MIT License](LICENSE)로 공개되어 있습니다.
+
 ## 출처 및 라이선스 고지
 
 MiraMira는 Matt Pocock의 `grill-me` 스킬을 친구에게 설명하기 쉬운 직관적인 브랜딩과 사용 맥락으로 다시 구성한 독립 프로젝트입니다. 원본 아이디어와 일부 스킬 문구는 [`mattpocock/skills`](https://github.com/mattpocock/skills)의 [`skills/productivity/grill-me`](https://github.com/mattpocock/skills/tree/main/skills/productivity/grill-me)를 바탕으로 하며, 해당 원본은 MIT License로 공개되어 있습니다.
@@ -128,6 +132,7 @@ SOFTWARE.
 
 ```text
 miramira-skill/
+├── LICENSE
 ├── README.md
 ├── docs/
 │   ├── README.en.md
