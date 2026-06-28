@@ -10,4 +10,9 @@ Interview me relentlessly about every aspect of this plan until we reach a share
 
 Ask the questions one at a time.
 
+Use the best available structured question UI when possible: in Codex, prefer
+`request_user_input`; in Claude Code, prefer `AskUserQuestion`.
+
+When it helps keep communication with the user clear and aligned, let your question reflect your current understanding, judgment, and uncertainty.
+
 If a question can be answered by exploring the codebase, explore the codebase instead.

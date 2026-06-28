@@ -42,10 +42,20 @@ https://github.com/Oscar-V4/miramira-skill
 
 直接安装：
 
+Codex:
+
 ```bash
 python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
   --repo Oscar-V4/miramira-skill \
   --path skills/miramira
+```
+
+Claude Code:
+
+```bash
+git clone https://github.com/Oscar-V4/miramira-skill.git
+cd miramira-skill
+./install.sh --target claude --force
 ```
 
 安装后重启你的 agent 应用，然后用 `$miramira` 调用。
@@ -67,6 +77,11 @@ description: >
 Interview me relentlessly about every aspect of this plan until we reach a shared understanding. Walk down each branch of the design tree, resolving dependencies between decisions one-by-one. For each question, provide your recommended answer.
 
 Ask the questions one at a time.
+
+Use the best available structured question UI when possible: in Codex, prefer
+`request_user_input`; in Claude Code, prefer `AskUserQuestion`.
+
+When it helps keep communication with the user clear and aligned, let your question reflect your current understanding, judgment, and uncertainty.
 
 If a question can be answered by exploring the codebase, explore the codebase instead.
 ```
