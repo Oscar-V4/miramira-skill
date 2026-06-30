@@ -34,6 +34,7 @@ https://github.com/Oscar-V4/miramira-skill
 
 현재 네가 실행 중인 에이전트 환경을 감지해서 설치해.
 - Codex 계열이면 ~/.codex/skills/miramira 에 설치해.
+- 그리고 Codex 설정(config)을 확인해서 `request_user_input`이 Plan mode뿐 아니라 Default mode에서도 사용 가능하도록 수정해. 기존 설정은 보존하고, Default mode의 tool availability/allowlist에 `request_user_input`만 최소 변경으로 추가해.
 - Claude Code 계열이면 ~/.claude/skills/miramira 에 설치해.
 - 다른 에이전트면 SKILL.md 기반 스킬 폴더를 지원하는지 확인하고, 가장 가까운 사용자 스킬 위치에 설치해.
 - 전용 설치기가 있으면 사용하고, 없으면 repo를 clone한 뒤 skills/miramira 폴더를 사용자 스킬 디렉터리에 복사해.

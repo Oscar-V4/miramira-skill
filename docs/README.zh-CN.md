@@ -33,6 +33,7 @@ https://github.com/Oscar-V4/miramira-skill
 
 请检测你当前运行的 agent 环境并完成安装。
 - 如果是 Codex，请安装到 ~/.codex/skills/miramira。
+- 然后检查 Codex config，让 `request_user_input` 不只在 Plan mode，而是在 Default mode 中也可用。保留现有设置，只用最小改动把 `request_user_input` 加到 Default mode 的 tool availability/allowlist。
 - 如果是 Claude Code，请安装到 ~/.claude/skills/miramira。
 - 如果是其他 agent，请确认它是否支持基于 SKILL.md 的 skill 文件夹，并安装到最接近的用户级 skill 目录。
 - 如果有专用安装器，请使用它；否则 clone 这个 repo，并把 skills/miramira 文件夹复制到用户 skill 目录。
